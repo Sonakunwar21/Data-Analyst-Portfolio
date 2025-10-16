@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sona Kunwar - Data Analyst Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc; /* Slate 50 */
+        }
+        .section-heading {
+            border-left: 5px solid #10b981; /* Emerald 500 */
+            padding-left: 0.75rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Simple utility for icons (optional, using inline SVGs is better) */
+        .icon {
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-gray-900">Sona Kunwar</div>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-emerald-500 transition duration-150 hidden sm:inline">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-emerald-500 transition duration-150 hidden sm:inline">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-emerald-500 transition duration-150 hidden sm:inline">Projects</a>
+                <a href="#contact" class="text-white bg-emerald-500 hover:bg-emerald-600 px-4 py-2 rounded-lg font-medium transition duration-150">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gray-900 text-white py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Profile Picture updated to use the uploaded file -->
+            <img src="sona.jpg" alt="Sona Kunwar Profile Picture" class="mx-auto rounded-full mb-6 border-4 border-emerald-500 shadow-xl w-32 h-32 object-cover">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                Hi, I'm <span class="text-emerald-400">Sona Kunwar</span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-light mb-8">
+                Data Analyst | Turning Complex Data into Actionable Insights
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">View Projects</a>
+                <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold section-heading text-gray-900">About Me</h2>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-3xl">
+                I am a passionate and results-driven aspiring Data Analyst. I focus on leveraging statistical methods and modern tools to transform raw data into clear, compelling narratives that drive effective business decisions. My goal is to use data visualization and analytical rigor to solve real-world problems. This portfolio showcases my ability to handle, clean, analyze, and present diverse datasets.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold section-heading text-gray-900">Core Skills & Tools</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <!-- Skill Block 1: Programming -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-3">Programming</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="icon text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a1 1 0 100-2 1 1 0 000 2zM9 4a1 1 0 11-2 0 1 1 0 012 0zm-2 2a1 1 0 100-2 1 1 0 000 2zm6 4a1 1 0 11-2 0 1 1 0 012 0zm-2 2a1 1 0 100-2 1 1 0 000 2z"></path><path fill-rule="evenodd" d="M3.707 9.293a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 11-1.414 1.414L10 6.414l-4.293 4.293a1 1 0 01-1.414 0zM10 16a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            Python (Pandas, NumPy)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="icon text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"></path></svg>
+                            R Language
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Block 2: Databases & ETL -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-3">Databases & ETL</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="icon text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm12 5a1 1 0 00-2 0v3a1 1 0 102 0v-3zm-6 3a1 1 0 11-2 0v-3a1 1 0 112 0v3z" clip-rule="evenodd"></path></svg>
+                            SQL (PostgreSQL, MySQL)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="icon text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 8a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z"></path></svg>
+                            Excel (Advanced)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Block 3: Visualization -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-3">Visualization</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="icon text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                            Tableau
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="icon text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 000 2h14a1 1 0 100-2H3zm0 4a1 1 0 000 2h14a1 1 0 100-2H3zm0 4a1 1 0 000 2h14a1 1 0 100-2H3z"></path></svg>
+                            Power BI
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Block 4: Statistics & Business -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-3">Statistics & Business</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="icon text-teal-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm12 6a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                            Statistical Analysis
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="icon text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.046a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.817-2.046a1 1 0 00-1.175 0l-2.817 2.046c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.022 8.721c-.783-.57-.381-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            Data Storytelling
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold section-heading text-gray-900">Portfolio Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">E-commerce Sales Analysis</h3>
+                        <p class="text-emerald-600 font-medium mb-4">SQL | Tableau Dashboard</p>
+                        <p class="text-gray-600 mb-4">
+                            Detailed analysis of sales data, identifying key trends, high-performing product categories, and regional sales efficiencies. Created a dynamic Tableau dashboard for executive viewing.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold transition duration-150">View Live Dashboard &rarr;</a>
+                            <a href="https://github.com/Sonakunwar21" class="text-gray-600 hover:text-gray-900 transition duration-150" target="_blank">GitHub Repo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Customer Churn Prediction</h3>
+                        <p class="text-emerald-600 font-medium mb-4">Python | Statistical Modeling</p>
+                        <p class="text-gray-600 mb-4">
+                            Developed a logistic regression model in Python to predict customer churn risk based on usage patterns and demographic data. Achieved 85% prediction accuracy.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold transition duration-150">View Report &rarr;</a>
+                            <a href="https://github.com/Sonakunwar21" class="text-gray-600 hover:text-gray-900 transition duration-150" target="_blank">GitHub Repo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Healthcare Utilization Report</h3>
+                        <p class="text-emerald-600 font-medium mb-4">R Language | Data Storytelling</p>
+                        <p class="text-gray-600 mb-4">
+                            Analyzed public health data to identify geographic trends in hospital utilization and presented findings in a comprehensive, visually-driven report focused on policy recommendations.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold transition duration-150">View Case Study &rarr;</a>
+                            <a href="https://github.com/Sonakunwar21" class="text-gray-600 hover:text-gray-900 transition duration-150" target="_blank">GitHub Repo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Call to Action for more projects -->
+            <div class="text-center mt-12">
+                <p class="text-xl text-gray-600">
+                    Check out all my analysis scripts and visualizations on GitHub!
+                </p>
+                <a href="https://github.com/Sonakunwar21" target="_blank" class="mt-4 inline-block bg-gray-900 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+                    Visit GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-emerald-500 py-16 md:py-24 text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-xl mb-8 font-light">
+                I'm currently seeking new Data Analyst opportunities. Feel free to reach out to discuss data, projects, or potential roles!
+            </p>
+            <div class="space-y-4">
+                <a href="tel:+917055868425" class="text-lg bg-white text-emerald-700 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg shadow-md block md:inline-block transition duration-300">
+                    Phone: +91 70558 68425
+                </a>
+                <a href="mailto:sonakunwar161@gmail.com" class="text-lg bg-white text-emerald-700 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg shadow-md block md:inline-block transition duration-300">
+                    Email: sonakunwar161@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/sona-kunwar-b6495237a" target="_blank" class="text-lg bg-white text-emerald-700 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg shadow-md block md:inline-block transition duration-300">
+                    LinkedIn: /in/sona-kunwar-b6495237a
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center text-gray-400">
+        <p>&copy; 2025 Sona Kunwar | Data Analyst Portfolio. Built with HTML and Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
